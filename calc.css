@@ -1,0 +1,67 @@
+body {
+    background:#222;
+    font:normal 62.5%/1.5 'lucida grande', tahoma, sans-serif;
+}
+
+h1 {
+    color:#d1d1d1;
+    font-size:30px;
+    margin:50px;
+    text-align:center;
+}
+
+#calculator { 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3b3b3), color-stop(100%,#636363)); 
+    webkit-box-shadow:0 4px 10px #000;
+    border-radius:5px;
+    margin:0 auto;
+    padding:10px;
+    width:300px;
+}
+
+#display {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#EFFBC2), color-stop(50%,#EFFBC2)); 
+    border:3px solid #808080;
+    border-top-color: #454545;
+    border-radius:15px;
+    -webkit-box-shadow:0 2px 0 #cccccc;
+    color:#000;
+    font-size:32px;
+    padding:20px 10px;
+    text-align:right;
+    width:294px;
+}
+
+button {  
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#ccccc));
+    border:1px solid rgba(0,0,0,0.5);
+    border-radius:8px;
+    -webkit-box-shadow:0 2px 2px #2e2e2e;
+    color:#303030;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:bold;
+    padding:0;
+    width:70px;
+}
+
+button span {
+    border:solid rgba(255,255,255,0.2);
+    border-radius:2px;
+    border-width:1px 0 0 1px;
+    display:block;
+    padding:10px 15px;
+}
+
+.button.pressed,
+button:active {
+    -webkit-box-shadow:inset 0 2px 20px #575757;
+}
+
+#zero {
+    width:144px;
+}
+
+#equals  {
+    height:96px;
+}

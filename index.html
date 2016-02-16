@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Abhishek's Calculator</title>
+</head>
+
+<body>
+    <h1>Abhishek's Calculator</h1>
+    
+    <div id="calculator">
+        <FORM name="Keypad" action="">
+            <table border="0">
+                <tr>
+                    <td colspan="4"><input type="text" name="Display" value="0" id="display"/></td>
+                </tr>
+                <tr>
+                    <td><button value="" type="button"><span>MC</span></button></td>
+                    <td><button value="" type="button"><span>M+</span></button></td>
+                    <td><button value="" type="button"><span>M-</span></button></td>
+                    <td><button value="" type="button"><span>MR</span></button></td>
+                </tr>
+                <tr>
+                    <td><button id="clear" value="C" type="button" onclick="Clear()"><span>C</span></button></td>
+                    <td><button id="plusmin" value="-" type="button" onclick="Neg()"><span>&plusmn;</span></button></td>
+                    <td><button value="÷" type="button" onclick="Operation('/')"><span>&divide;</span></button></td>
+                    <td><button value="×" type="button" onclick="Operation('*')"><span>&times;</span></button></td>
+                </tr>
+                <tr>
+                    <td><button value="7" type="button" onclick="NumPressed(7)"><span>7</span></button></td>
+                    <td><button value="8" type="button" onclick="NumPressed(8)"><span>8</span></button></td>
+                    <td><button value="9" type="button" onclick="NumPressed(9)"><span>9</span></button></td>
+                    <td><button value="-" type="button" onclick="Operation('-')"><span>&#8722;</span></button></td>
+                </tr>
+                <tr>
+                    <td><button value="4" type="button" onclick="NumPressed(4)"><span>4</span></button></td>
+                    <td><button value="5" type="button" onclick="NumPressed(5)"><span>5</span></button></td>
+                    <td><button value="6" type="button" onclick="NumPressed(6)"><span>6</span></button></td>
+                    <td><button value="+" type="button" onclick="Operation('+')"><span>&#43;</span></button></td>
+                </tr>
+                <tr>
+                    <td><button value="1" type="button" onclick="NumPressed(1)"><span>1</span></button></td>
+                    <td><button value="2" type="button" onclick="NumPressed(2)"><span>2</span></button></td>
+                    <td><button value="3" type="button" onclick="NumPressed(3)"><span>3</span></button></td>
+                    <td rowspan="2"><button id="equals" value="=" type="button" onclick="Operation('=')"><span>=</span></button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="zero" value="0" type="button" onclick="NumPressed(0)"><span>0</span></button></td>
+                    <td><button value="." type="button" onclick="Decimal()"><span>.</span></button></td>
+                </tr>
+            </table>
+        </FORM>
+    </div>
+</body>
+
+</html>
